@@ -6,13 +6,16 @@ import neopixel
 
 # Configure treasure information
 #                  ID       PIXEL    COLOR
-TREASURE_INFO = { (1,)*4 : (  0  , 0xFF0000) ,
-                  (2,)*4 : (  1  , 0x00FF00) ,
-                  (3,)*4 : (  2  , 0x0000FF) ,
-                  (4,)*4 : (  3  , 0x008000) ,
-                  (5,)*4 : (  4  , 0x00FFFF) ,
-                  (6,)*4 : (  5  , 0x008080) ,
-                  (7,)*4 : (  6  , 0xA569BD ) }
+TREASURE_INFO = { (1,)*4 : (  0  , 0xC0392B) , #redish
+                  (2,)*4 : (  1  , 0x9B59B6) , #purple
+                  (3,)*4 : (  2  , 0x2980B9) , #blue
+                  (4,)*4 : (  3  , 0x1ABC9C) , #seagreen
+                  (5,)*4 : (  4  , 0xF1C40F) , #orange
+                  (6,)*4 : (  5  , 0xECF0F1) , #white
+                  (7,)*4 : (  6  , 0x196F3D) , #dark green
+                  (8,)*4 : (  7  , 0xAED6F1) , #light blue
+                  (9,)*4 : (  8  , 0xE59866) , #orange-brown
+                  (10,)*4 : (  9  , 0xFF00FF)} #fuscia
 treasures_found = dict.fromkeys(TREASURE_INFO.keys(), False) 
 
 # Create NeoPixel object to indicate status
