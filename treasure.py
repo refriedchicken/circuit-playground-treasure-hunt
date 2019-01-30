@@ -5,7 +5,7 @@ import adafruit_irremote
 import neopixel
 
 # Configure treasure information
-TREASURE_ID = 10
+TREASURE_ID = 1
 TRANSMIT_DELAY = 15
 
 # Create NeoPixel object to indicate status
@@ -19,7 +19,7 @@ pulseout = pulseio.PulseOut(pwm)
 encoder = adafruit_irremote.GenericTransmit(header=[9500, 4500], one=[550, 550], zero=[550, 1700], trail=0)
 
 while True:
-    pixels.fill(0xFF0000)
+    pixels.fill(0xC0392B) #match color from hunter code
     encoder.transmit(pulseout, [TREASURE_ID]*4)
     time.sleep(0.25)
     pixels.fill(0)
